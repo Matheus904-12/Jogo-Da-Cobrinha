@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="gameOverSound" src="perder.mp3.wav"></audio>
+    <audio id="eatAppleSound" src="ganhar.mp3.wav"></audio>
+    <canvas id="gameCanvas" width="800" height="800"></canvas>
     <div class="wrapper">
         <div class="game-details">
-            <span class="score">Pontuação: 0</span>
         </div>
         <div class="play-board"></div>
         <div class="controls">
@@ -17,9 +19,10 @@
             <i data-key='ArrowUp' class="fa-solid fa-arrow-up-long"></i>
             <i data-key='ArrowDown' class="fa-solid fa-arrow-down-long"></i>
             <i data-key='ArrowRight' class="fa-solid fa-arrow-right-long"></i>
-            
         </div>
     </div>
+    <div id="score" class="score">Pontuação: <span id="scoreValue">0</span></div>
+    <div id="nokiaReference" class="nokia-reference">Inspired by Nokia Snake</div>
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/4bdbb4169f.js" crossorigin="anonymous"></script>
 </body>
